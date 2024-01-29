@@ -1,0 +1,81 @@
+/* */
+body {
+    background-color: lightblue;
+}
+
+#navbar {
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+#navbar ul {
+    float: right;
+}
+
+#navbar li {
+    list-style-type: none;
+    float: left;
+    font-weight: bold;
+    padding: 3px 15px;
+    border-radius: 5px;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin-top: 20px;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    padding: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 10px;
+    max-width: 140px;
+}
+
+#profile-picture {
+    margin-right: 0px;
+}
+
+#highlight {
+    margin-right: 50px;
+}
+
+#highlight h1 {
+    margin: 0;
+}
+
+#label {
+    margin-right: 0px;
+}
+
+#profile-detail {
+    margin-left: 0px;
+}
+
+#profile-form {
+    flex: 1;
+    order: 1;
+}
+
+#profile-form input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#profile-form #submit-form {
+    margin-top: 10px;
+}
