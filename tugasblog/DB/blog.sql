@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 10, 2023 at 09:28 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Feb 05, 2024 at 10:43 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -36,6 +36,15 @@ CREATE TABLE `blogs` (
   `category` varchar(200) NOT NULL,
   `image` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `blogs`
+--
+
+INSERT INTO `blogs` (`blog_id`, `title`, `date`, `content`, `auther`, `category`, `image`) VALUES
+(18, 'aku', '2024-02-05', 'aaa', 'bejo', '1', '.65c0a5442024d..'),
+(19, 'kels', '2024-02-05', 'dann', 'bejo', 'News', '65c0a76f89d03.'),
+(20, 'apa', '2024-02-05', 'aaaa', 'bejo', 'Select a category', '65c0a86742f38.jpg');
 
 -- --------------------------------------------------------
 
@@ -70,6 +79,13 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`user_id`, `name`, `email`, `password`, `mobile`, `date`, `profile`) VALUES
+(5, 'bejo', 'bejo1234@gmail.com', 'bejo321', NULL, '2024-02-05', NULL);
+
+--
 -- Indexes for dumped tables
 --
 
@@ -99,7 +115,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `blog_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `blog_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `draft`
@@ -111,7 +127,7 @@ ALTER TABLE `draft`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
